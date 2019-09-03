@@ -5,6 +5,8 @@ import java.util.Arrays;
 
 public class Services {
 	
+	// Write a function that receive two arrays of strings, and returns only the elements 
+	// that are equal in both.
 	public String[] task1(String[] array1, String[] array2) {
 		return  Arrays.asList(array1)
 		.stream()
@@ -12,6 +14,7 @@ public class Services {
 		.toArray(String[]::new);
 	}
 	
+	// Write a function that computes
 	public Double task2() { 
 		Double resp = 0D;
 	
@@ -22,6 +25,7 @@ public class Services {
 		return resp*4;
 	}
 	
+	// Mathematical formula for task 2
 	private double formulaBase(int k) {
 		return (Math.pow((-1),(k+1))) / ((2*k)-1);
 	}
@@ -37,6 +41,8 @@ public class Services {
 		return resp.toArray();
 	}
 
+	// Write a function such that if an element in an MxN matrix is 0, its entire row and 
+	// column are set to 0 and then printed out.
 	public Integer[][] task5(Integer[][] matrix) {		
 		ArrayList<Integer> columns = new ArrayList<>();
 		
@@ -65,6 +71,7 @@ public class Services {
 	
 	}
 	
+	//  Write a function that adds two numbers without using any arithmetic operators
 	public int task6(int num1, int num2) 
     { 
         while (num2 != 0)  
