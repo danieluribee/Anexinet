@@ -49,13 +49,11 @@ public class Services {
 		for(Integer[] row : matrix) {
 			if(Arrays.asList(row).contains(0)) {
 				for(int i = 0; i < row.length; i++) {
-					if(row[i] == 0) columns.add(i);  
+					if(row[i] == 0) { columns.add(i); }
 					row[i] = 0;
 				}
 			}	
 		}
-		
-		System.out.println("columns :" + columns.toString());
 		
 		int cont = 0;
 		for(Integer[] row : matrix){
